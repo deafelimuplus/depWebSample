@@ -18,7 +18,7 @@ export function Header() {
       )}
 
       <header className="header">
-        <h1>Deaf eLimu Plus (Test sample)</h1>
+        <Firebase />
       </header>
     </>
   );
