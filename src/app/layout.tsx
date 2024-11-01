@@ -8,9 +8,6 @@ import './assets/css/bootstrap.4.5.2.min.css';
 import './assets/css/default.css';
 import './assets/css/style.css';
 
-import { Header } from "./components";
-import { Preloader } from "./components";
-
 export const metadata: Metadata = {
   title: "Next.js on Firebase App Hosting",
   description: "",
@@ -30,10 +27,16 @@ export default function RootLayout({
       </head>
       <body>
         <div className="dots" />
-        <Header />
         {children}
         <div className="bottom-gradient" />
-        <Script src="./assets/js/vendor/jquery-1.12.4.min.js" />
+        <Script src="https://raw.githubusercontent.com/deafelimuplus/depWebSample/refs/heads/main/src/app/assets/js/vendor/jquery-1.12.4.min.js" />
+        <Script src="https://raw.githubusercontent.com/deafelimuplus/depWebSample/refs/heads/main/src/app/assets/js/vendor/modernizr-3.7.1.min.js" />
+        <Script src="https://raw.githubusercontent.com/deafelimuplus/depWebSample/refs/heads/main/src/app/assets/js/popper.min.js" />
+        <Script src="https://raw.githubusercontent.com/deafelimuplus/depWebSample/refs/heads/main/src/app/assets/js/bootstrap.4.5.2.min.js" />
+        <Script src="https://raw.githubusercontent.com/deafelimuplus/depWebSample/refs/heads/main/src/app/assets/js/jquery.easing.min.js" />
+        <Script src="https://raw.githubusercontent.com/deafelimuplus/depWebSample/refs/heads/main/src/app/assets/js/scrolling-nav.js" />
+        <Script src="https://raw.githubusercontent.com/deafelimuplus/depWebSample/refs/heads/main/src/app/assets/js/wow.min.js" />
+        <Script src="https://raw.githubusercontent.com/deafelimuplus/depWebSample/refs/heads/main/src/app/assets/js/main.js" />
       </body>
     </html>
   );
