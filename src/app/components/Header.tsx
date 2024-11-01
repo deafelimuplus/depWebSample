@@ -1,7 +1,4 @@
 "use client";
-
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Image from 'next/image'
 
 import shape1Svg from '../assets/images/shape-1.svg';
@@ -14,15 +11,8 @@ import { Arrow } from "./Arrow";
 import { Firebase } from "./Firebase";
 
 export function Header() {
-  const pathname = usePathname();
-  const company = process.env["COMPANY"] || "Deaf eLimu Plus Limited";
   return (
     <>
-      {pathname !== "/" && (
-        <Link className="button back-button" href="/">
-          <Arrow /> Back to home
-        </Link>
-      )}
       { /* ====== HEADER PART START ====== */ }
       <section className="header_area">
         <div className="header_navbar">

@@ -7,6 +7,7 @@ export default function Home() {
   const company_short = process.env["COMPANY_SHORT"] || "DEP";
   return (
     <>
+      <Preloader />
       <Header />
       <Features />
     </>
