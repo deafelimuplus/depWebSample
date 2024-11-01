@@ -16,6 +16,16 @@ env:
     availability:
       - BUILD
       - RUNTIME
+  - variable: COMPANY
+    value: Deaf eLimu Plus
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: COMPANY_SHORT
+    value: DEP
+    availability:
+      - BUILD
+      - RUNTIME
 
   # Configure secrets
   # See https://firebase.google.com/docs/app-hosting/configure#secret-parameters

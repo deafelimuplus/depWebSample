@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
+import Script from 'next/script'
 
-import "./globals.css";
+// import "./globals.css";
+import './assets/css/animate.css';
+import './assets/css/LineIcons.2.0.css';
+import './assets/css/bootstrap.4.5.2.min.css';
+import './assets/css/default.css';
+import './assets/css/style.css';
+
 import { Header } from "./components";
+import { Preloader } from "./components";
 
 export const metadata: Metadata = {
   title: "Next.js on Firebase App Hosting",
@@ -25,6 +33,7 @@ export default function RootLayout({
         <Header />
         {children}
         <div className="bottom-gradient" />
+        <Script src="./assets/js/vendor/jquery-1.12.4.min.js" />
       </body>
     </html>
   );

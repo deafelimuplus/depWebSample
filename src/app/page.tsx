@@ -2,10 +2,13 @@ import Link from "next/link";
 
 export default function Home() {
   const message = process.env["MESSAGE"] || "Hello!";
+  const company = process.env["COMPANY"] || "Deaf eLimu Plus Limited";
+  const company_short = process.env["COMPANY_SHORT"] || "DEP";
   return (
     <main className="content">
-      <h1 className="heading">Next.js on Firebase App Hosting</h1>
+      <h1 className="heading">{company_short} on Firebase App Hosting</h1>
       <p>{message}</p>
+      <p>{company}</p>
 
       <section className="features">
         <article className="card">
@@ -42,9 +45,8 @@ export default function Home() {
             >
               Google Cloud CDN
             </Link>
-            , a fast and secure way to host cached content globally. Visit
+            , a fast and secure way to host cached content globally. Visit{" "}
             <Link href="/ssg">
-              {" "}
               <code>/ssg</code>
             </Link>{" "}
           </p>
